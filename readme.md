@@ -2,7 +2,9 @@
 
 ```Cuidar do seu cliente é cuidar da sua empresa.```
 
-GSCare é um sistema backend robusto desenvolvido em .NET 8 utilizando C#, Entity Framework, Dapper, Clean Code e Domain-Driven Design (DDD). O sistema é voltado para o acompanhamento e gerenciamento de clientes e funcionários em empresas prestadoras de serviços, como clínicas e profissionais de saúde. Entre suas funcionalidades, destacam-se o gerenciamento de pacientes, funcionários, agendamentos de calendário, e o armazenamento de fotos e arquivos. O GSCare será oferecido como um Software como Serviço (SaaS).
+O sistema é voltado para o acompanhamento e gerenciamento de clientes e funcionários em empresas prestadoras de serviços, como clínicas e profissionais de saúde. Entre suas funcionalidades, destacam-se o gerenciamento de pacientes, funcionários, agendamentos de calendário, e o armazenamento de fotos e arquivos. O GSCare será oferecido como um Software como Serviço (SaaS).
+
+GSCare é um sistema backend robusto desenvolvido em .NET 8 utilizando C#, Entity Framework, Dapper, Clean Code e Domain-Driven Design (DDD). 
 
 ## 🚀 Começando
 
@@ -23,7 +25,7 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento:
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/feh-franc0/GSCare.git
+   git clone https://github.com/feh-franc0/gscare-backend-aspnetcore
    cd GSCare
    ```
 
@@ -56,6 +58,7 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento:
 
 4. **Execute as migrações:**
 
+   Você deve ter seu banco de dados criado
    Execute o comando para aplicar as migrações e configurar o banco de dados:
 
    ```bash
@@ -78,17 +81,37 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento:
 
 No momento, os testes estão sendo desenvolvidos e serão adicionados na fase final do projeto. Os testes cobrirão todos os cenários críticos de negócios para garantir a robustez do sistema.
 
-### 🖼️ Swagger e Roadmap
+### 🖼️ Swagger
+<!-- e Roadmap -->
 
 - **Swagger UI**: Acesse a documentação interativa da API através do Swagger:
 
-  ![Swagger Screenshot](./swagger_gscare.png)
+  <!--![Swagger Screenshot](./swagger_gscare.png)-->
+  <details>
+     <summary style="cursor: pointer; font-weight: bold; color: #007bff; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
+       📸 Clique aqui para visualizar a imagem do Swagger
+     </summary>
+     <img src="./swagger_gscare.png" alt="Descrição da Imagem" style="max-width:100%;height:auto;">
+   </details>
+
+
 
   O Swagger UI estará disponível em `https://localhost:7053/swagger/index.html`.
 
+<!--
 - **Roadmap .NET**: Aqui está um exemplo de roadmap que pode ajudar no aprendizado de .NET:
 
-  ![Roadmap .NET](./roadmap_gscare.png)
+  <details>
+     <summary style="cursor: pointer; font-weight: bold; color: #007bff; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
+       📸 Clique aqui para visualizar a imagem do Roadmap
+     </summary>
+     <img src="./roadmap_gscare.png" alt="Descrição da Imagem" style="max-width:100%;height:auto;">
+   </details>
+   -->
+
+### 🎲 Fluxograma | Diagrama de classe
+
+```Sendo feito. ⚠️```
 
 ### 🛠️ Arquitetura
 
@@ -96,11 +119,25 @@ O GSCare é construído seguindo os princípios de Clean Architecture e Domain-D
 
 - **Clean Architecture**: A separação clara das responsabilidades nas diferentes camadas do projeto permite que as alterações em uma camada não afetem as outras. Isso promove um código mais limpo e fácil de manter.
 
-  ![Clean Architecture](./ddd_gscare.png)
+  <!--![Clean Architecture](./cleanarchitecture_gscare.jpg)-->
+  <details>
+     <summary style="cursor: pointer; font-weight: bold; color: #007bff; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
+       📸 Clique aqui para visualizar a imagem sobre Clean Architecture
+     </summary>
+     <img src="./cleanarchitecture_gscare.jpg" alt="Descrição da Imagem" style="max-width:100%;height:auto;">
+   </details>
 
   **Resumo:** A Clean Architecture organiza o código em camadas, como a de domínio, aplicação e infraestrutura, promovendo uma alta coesão e baixo acoplamento.
 
 - **DDD (Domain-Driven Design)**: Focamos na modelagem de negócios real através de entidades, agregados e serviços de domínio. Isso garante que a lógica de negócios seja clara, bem definida e diretamente refletida no código.
+
+  <!--![Clean Architecture](./ddd_gscare.png)-->
+  <details>
+     <summary style="cursor: pointer; font-weight: bold; color: #007bff; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
+       📸 Clique aqui para visualizar a imagem sobre DDD
+     </summary>
+     <img src="./ddd_gscare.png" alt="Descrição da Imagem" style="max-width:100%;height:auto;">
+   </details>
 
 ### 📦 Implantação
 
@@ -149,12 +186,26 @@ Nós utilizamos [SemVer](http://semver.org/) para controle de versão. Atualment
 
 ## 📄 Licença
 
-Este projeto está em processo de validação e não é permitida a venda, comércio ou uso sem autorização expressa. Para mais detalhes, consulte o arquivo [LICENSE.md](LICENSE.md).
+Este projeto está em processo de validação e não é permitida a venda, comércio ou uso sem autorização expressa. Para mais detalhes, consulte o arquivo abaixo:
 
-## 🎁 Expressões de gratidão
+<details>
+  <summary style="cursor: pointer; font-weight: bold; color: #007BFF;">Licença</summary>
+  <div style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 15px; margin-top: 10px;">
+    <pre style="background-color: #e9ecef; border: 1px solid #ced4da; border-radius: 5px; padding: 10px; overflow: auto;">
+      <code>
+      LICENÇA PRIVADA
+      Este projeto está licenciado sob uma licença privada. As seguintes condições se aplicam:
+         1. Uso Restrito: O código-fonte deste projeto é fornecido para uso pessoal e acadêmico apenas. Qualquer uso comercial, incluindo, mas não se limitando a, venda, distribuição, ou implementação do código com o objetivo de obter lucro financeiro, é estritamente proibido.
+         2. Proibição de Comercialização: O código-fonte não pode ser comercializado de nenhuma forma. Isso inclui, mas não se limita a, vender, licenciar, ou sublicenciar o código para terceiros.
+         3. Sem Lucros Financeiros: O código não deve ser utilizado para qualquer atividade que gere lucros financeiros diretos ou indiretos. Qualquer forma de monetização ou ganho financeiro resultante do uso do código é proibida.
+         4. Permissões Especiais: Qualquer uso do código fora das condições acima requer autorização expressa por escrito do detentor dos direitos autorais. Para obter permissões especiais, entre em contato com o detentor dos direitos autorais.
+         5. Contato: Para dúvidas sobre a licença ou solicitações de permissões especiais, entre em contato pelo e-mail:  <a href="mailto:fernandofv1110@gmail.com">fernandofv1110@gmail.com</a>.
+      Qualquer violação dos termos acima pode resultar em ações legais para proteger os direitos autorais do detentor.      
+     </code>
+    </pre>
+  </div>
+</details>
 
-* Conte a outras pessoas sobre este projeto 📢;
-* Agradeça publicamente 🫂;
 
 ---
 
